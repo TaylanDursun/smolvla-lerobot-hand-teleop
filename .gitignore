@@ -49,6 +49,8 @@ Thumbs.db
 # Local outputs and media artifacts (keep placeholders with .gitkeep)
 outputs/
 artifacts/
+/report/
+/report/**
 *.mp4
 *.avi
 *.mov
