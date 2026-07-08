@@ -51,6 +51,7 @@ outputs/
 artifacts/
 /report/
 /report/**
+/external/
 *.mp4
 *.avi
 *.mov
