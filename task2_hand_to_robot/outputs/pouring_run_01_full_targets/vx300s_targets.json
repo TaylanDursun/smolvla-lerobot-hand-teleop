@@ -1,0 +1,1204 @@
+{
+  "metadata": {
+    "source_metadata": {
+      "input_video": "task2_hand_to_robot/pouring.mp4",
+      "annotated_video": "task2_hand_to_robot/outputs/pouring_run_01_full/annotated_hands.mp4",
+      "model_path": "task2_hand_to_robot/outputs/pouring_run_01_full/hand_landmarker.task",
+      "fps": 29.17678604789169,
+      "frame_width": 848,
+      "frame_height": 478,
+      "num_frames": 118
+    },
+    "mapping": {
+      "x_center": 0.24,
+      "y_center": 0.0,
+      "z_center": 0.22,
+      "x_range": 0.12,
+      "y_range": 0.2,
+      "z_range": 0.16,
+      "pour_scale": 0.8
+    }
+  },
+  "targets": [
+    {
+      "frame_index": 0,
+      "time_s": 0.0,
+      "detected": true,
+      "target_x_m": 0.185171,
+      "target_y_m": -0.08356,
+      "target_z_m": 0.24488,
+      "target_wrist_rotate_rad": 0.0,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 1,
+      "time_s": 0.03427382297551789,
+      "detected": true,
+      "target_x_m": 0.188489,
+      "target_y_m": -0.080946,
+      "target_z_m": 0.24406,
+      "target_wrist_rotate_rad": -0.001438,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 2,
+      "time_s": 0.06854764595103578,
+      "detected": true,
+      "target_x_m": 0.188934,
+      "target_y_m": -0.078276,
+      "target_z_m": 0.243334,
+      "target_wrist_rotate_rad": -0.002464,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 3,
+      "time_s": 0.10282146892655367,
+      "detected": true,
+      "target_x_m": 0.195167,
+      "target_y_m": -0.075855,
+      "target_z_m": 0.242289,
+      "target_wrist_rotate_rad": -0.009049,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 4,
+      "time_s": 0.13709529190207156,
+      "detected": true,
+      "target_x_m": 0.196206,
+      "target_y_m": -0.072987,
+      "target_z_m": 0.241196,
+      "target_wrist_rotate_rad": -0.010923,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 5,
+      "time_s": 0.17136911487758946,
+      "detected": true,
+      "target_x_m": 0.195115,
+      "target_y_m": -0.068768,
+      "target_z_m": 0.239665,
+      "target_wrist_rotate_rad": -0.010336,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 6,
+      "time_s": 0.20564293785310733,
+      "detected": true,
+      "target_x_m": 0.192833,
+      "target_y_m": -0.066016,
+      "target_z_m": 0.238813,
+      "target_wrist_rotate_rad": -0.002918,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 7,
+      "time_s": 0.23991676082862523,
+      "detected": true,
+      "target_x_m": 0.191761,
+      "target_y_m": -0.063862,
+      "target_z_m": 0.237166,
+      "target_wrist_rotate_rad": 0.007921,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 8,
+      "time_s": 0.27419058380414313,
+      "detected": true,
+      "target_x_m": 0.19007,
+      "target_y_m": -0.058419,
+      "target_z_m": 0.234105,
+      "target_wrist_rotate_rad": 0.017336,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 9,
+      "time_s": 0.308464406779661,
+      "detected": true,
+      "target_x_m": 0.188497,
+      "target_y_m": -0.056118,
+      "target_z_m": 0.230958,
+      "target_wrist_rotate_rad": 0.032956,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 10,
+      "time_s": 0.3427382297551789,
+      "detected": true,
+      "target_x_m": 0.18994,
+      "target_y_m": -0.054256,
+      "target_z_m": 0.227373,
+      "target_wrist_rotate_rad": 0.045419,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 11,
+      "time_s": 0.3770120527306968,
+      "detected": true,
+      "target_x_m": 0.194792,
+      "target_y_m": -0.049427,
+      "target_z_m": 0.223052,
+      "target_wrist_rotate_rad": 0.048703,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 12,
+      "time_s": 0.41128587570621467,
+      "detected": true,
+      "target_x_m": 0.19915,
+      "target_y_m": -0.043769,
+      "target_z_m": 0.219198,
+      "target_wrist_rotate_rad": 0.052007,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 13,
+      "time_s": 0.44555969868173256,
+      "detected": true,
+      "target_x_m": 0.202667,
+      "target_y_m": -0.039556,
+      "target_z_m": 0.216295,
+      "target_wrist_rotate_rad": 0.057325,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 14,
+      "time_s": 0.47983352165725046,
+      "detected": true,
+      "target_x_m": 0.205374,
+      "target_y_m": -0.029991,
+      "target_z_m": 0.213068,
+      "target_wrist_rotate_rad": 0.058066,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 15,
+      "time_s": 0.5141073446327684,
+      "detected": true,
+      "target_x_m": 0.205136,
+      "target_y_m": -0.020795,
+      "target_z_m": 0.209801,
+      "target_wrist_rotate_rad": 0.059815,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 16,
+      "time_s": 0.5483811676082863,
+      "detected": true,
+      "target_x_m": 0.204,
+      "target_y_m": -0.011402,
+      "target_z_m": 0.20582,
+      "target_wrist_rotate_rad": 0.062915,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 17,
+      "time_s": 0.5826549905838041,
+      "detected": true,
+      "target_x_m": 0.203643,
+      "target_y_m": -0.001116,
+      "target_z_m": 0.20129,
+      "target_wrist_rotate_rad": 0.063811,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 18,
+      "time_s": 0.616928813559322,
+      "detected": true,
+      "target_x_m": 0.203829,
+      "target_y_m": 0.010245,
+      "target_z_m": 0.195805,
+      "target_wrist_rotate_rad": 0.067911,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 19,
+      "time_s": 0.6512026365348399,
+      "detected": true,
+      "target_x_m": 0.203922,
+      "target_y_m": 0.021646,
+      "target_z_m": 0.188715,
+      "target_wrist_rotate_rad": 0.071177,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 20,
+      "time_s": 0.6854764595103578,
+      "detected": true,
+      "target_x_m": 0.204278,
+      "target_y_m": 0.033661,
+      "target_z_m": 0.180804,
+      "target_wrist_rotate_rad": 0.073295,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 21,
+      "time_s": 0.7197502824858757,
+      "detected": true,
+      "target_x_m": 0.20326,
+      "target_y_m": 0.044271,
+      "target_z_m": 0.172195,
+      "target_wrist_rotate_rad": 0.077326,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 22,
+      "time_s": 0.7540241054613936,
+      "detected": true,
+      "target_x_m": 0.201224,
+      "target_y_m": 0.055299,
+      "target_z_m": 0.163542,
+      "target_wrist_rotate_rad": 0.080179,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 23,
+      "time_s": 0.7882979284369115,
+      "detected": true,
+      "target_x_m": 0.198426,
+      "target_y_m": 0.064517,
+      "target_z_m": 0.155742,
+      "target_wrist_rotate_rad": 0.083938,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 24,
+      "time_s": 0.8225717514124293,
+      "detected": true,
+      "target_x_m": 0.197413,
+      "target_y_m": 0.071655,
+      "target_z_m": 0.14939,
+      "target_wrist_rotate_rad": 0.088971,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 25,
+      "time_s": 0.8568455743879473,
+      "detected": true,
+      "target_x_m": 0.196542,
+      "target_y_m": 0.077954,
+      "target_z_m": 0.144223,
+      "target_wrist_rotate_rad": 0.092924,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 26,
+      "time_s": 0.8911193973634651,
+      "detected": true,
+      "target_x_m": 0.195549,
+      "target_y_m": 0.081837,
+      "target_z_m": 0.141085,
+      "target_wrist_rotate_rad": 0.095427,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 27,
+      "time_s": 0.9253932203389831,
+      "detected": true,
+      "target_x_m": 0.195758,
+      "target_y_m": 0.082375,
+      "target_z_m": 0.14,
+      "target_wrist_rotate_rad": 0.099737,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 28,
+      "time_s": 0.9596670433145009,
+      "detected": true,
+      "target_x_m": 0.197603,
+      "target_y_m": 0.083783,
+      "target_z_m": 0.140294,
+      "target_wrist_rotate_rad": 0.101845,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 29,
+      "time_s": 0.9939408662900189,
+      "detected": true,
+      "target_x_m": 0.196476,
+      "target_y_m": 0.085429,
+      "target_z_m": 0.142849,
+      "target_wrist_rotate_rad": 0.104738,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 30,
+      "time_s": 1.0282146892655368,
+      "detected": true,
+      "target_x_m": 0.194615,
+      "target_y_m": 0.088664,
+      "target_z_m": 0.147433,
+      "target_wrist_rotate_rad": 0.108308,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 31,
+      "time_s": 1.0624885122410546,
+      "detected": true,
+      "target_x_m": 0.194556,
+      "target_y_m": 0.092436,
+      "target_z_m": 0.153179,
+      "target_wrist_rotate_rad": 0.109572,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 32,
+      "time_s": 1.0967623352165725,
+      "detected": true,
+      "target_x_m": 0.195065,
+      "target_y_m": 0.098259,
+      "target_z_m": 0.160136,
+      "target_wrist_rotate_rad": 0.106712,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 33,
+      "time_s": 1.1310361581920905,
+      "detected": true,
+      "target_x_m": 0.196947,
+      "target_y_m": 0.1,
+      "target_z_m": 0.168492,
+      "target_wrist_rotate_rad": 0.102427,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 34,
+      "time_s": 1.1653099811676082,
+      "detected": true,
+      "target_x_m": 0.201434,
+      "target_y_m": 0.099819,
+      "target_z_m": 0.177378,
+      "target_wrist_rotate_rad": 0.094652,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 35,
+      "time_s": 1.1995838041431262,
+      "detected": true,
+      "target_x_m": 0.206579,
+      "target_y_m": 0.09429,
+      "target_z_m": 0.187345,
+      "target_wrist_rotate_rad": 0.087051,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 36,
+      "time_s": 1.233857627118644,
+      "detected": true,
+      "target_x_m": 0.214589,
+      "target_y_m": 0.088577,
+      "target_z_m": 0.198335,
+      "target_wrist_rotate_rad": 0.077542,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 37,
+      "time_s": 1.268131450094162,
+      "detected": true,
+      "target_x_m": 0.230742,
+      "target_y_m": 0.083538,
+      "target_z_m": 0.208858,
+      "target_wrist_rotate_rad": 0.064786,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 38,
+      "time_s": 1.3024052730696798,
+      "detected": true,
+      "target_x_m": 0.246608,
+      "target_y_m": 0.077948,
+      "target_z_m": 0.219741,
+      "target_wrist_rotate_rad": 0.053823,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 39,
+      "time_s": 1.3366790960451977,
+      "detected": true,
+      "target_x_m": 0.263134,
+      "target_y_m": 0.071126,
+      "target_z_m": 0.230172,
+      "target_wrist_rotate_rad": 0.042641,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 40,
+      "time_s": 1.3709529190207157,
+      "detected": true,
+      "target_x_m": 0.278458,
+      "target_y_m": 0.066929,
+      "target_z_m": 0.240036,
+      "target_wrist_rotate_rad": 0.032025,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 41,
+      "time_s": 1.4052267419962334,
+      "detected": true,
+      "target_x_m": 0.292308,
+      "target_y_m": 0.063007,
+      "target_z_m": 0.248562,
+      "target_wrist_rotate_rad": 0.024679,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 42,
+      "time_s": 1.4395005649717514,
+      "detected": true,
+      "target_x_m": 0.297842,
+      "target_y_m": 0.056888,
+      "target_z_m": 0.256141,
+      "target_wrist_rotate_rad": 0.023449,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 43,
+      "time_s": 1.4737743879472693,
+      "detected": true,
+      "target_x_m": 0.3,
+      "target_y_m": 0.055462,
+      "target_z_m": 0.262324,
+      "target_wrist_rotate_rad": 0.020806,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 44,
+      "time_s": 1.5080482109227873,
+      "detected": true,
+      "target_x_m": 0.298775,
+      "target_y_m": 0.055165,
+      "target_z_m": 0.26768,
+      "target_wrist_rotate_rad": 0.020946,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 45,
+      "time_s": 1.542322033898305,
+      "detected": true,
+      "target_x_m": 0.297246,
+      "target_y_m": 0.054034,
+      "target_z_m": 0.27169,
+      "target_wrist_rotate_rad": 0.022803,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 46,
+      "time_s": 1.576595856873823,
+      "detected": true,
+      "target_x_m": 0.291687,
+      "target_y_m": 0.052952,
+      "target_z_m": 0.275089,
+      "target_wrist_rotate_rad": 0.02497,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 47,
+      "time_s": 1.610869679849341,
+      "detected": true,
+      "target_x_m": 0.283645,
+      "target_y_m": 0.051662,
+      "target_z_m": 0.277983,
+      "target_wrist_rotate_rad": 0.026165,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 48,
+      "time_s": 1.6451435028248587,
+      "detected": true,
+      "target_x_m": 0.275022,
+      "target_y_m": 0.048259,
+      "target_z_m": 0.280028,
+      "target_wrist_rotate_rad": 0.027959,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 49,
+      "time_s": 1.6794173258003766,
+      "detected": true,
+      "target_x_m": 0.270228,
+      "target_y_m": 0.046787,
+      "target_z_m": 0.280934,
+      "target_wrist_rotate_rad": 0.026909,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 50,
+      "time_s": 1.7136911487758946,
+      "detected": true,
+      "target_x_m": 0.267098,
+      "target_y_m": 0.04528,
+      "target_z_m": 0.280959,
+      "target_wrist_rotate_rad": 0.022767,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 51,
+      "time_s": 1.7479649717514125,
+      "detected": true,
+      "target_x_m": 0.263473,
+      "target_y_m": 0.039661,
+      "target_z_m": 0.280759,
+      "target_wrist_rotate_rad": 0.022202,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 52,
+      "time_s": 1.7822387947269303,
+      "detected": true,
+      "target_x_m": 0.263962,
+      "target_y_m": 0.034851,
+      "target_z_m": 0.280177,
+      "target_wrist_rotate_rad": 0.021629,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 53,
+      "time_s": 1.8165126177024482,
+      "detected": true,
+      "target_x_m": 0.267581,
+      "target_y_m": 0.032934,
+      "target_z_m": 0.279014,
+      "target_wrist_rotate_rad": 0.019589,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 54,
+      "time_s": 1.8507864406779662,
+      "detected": true,
+      "target_x_m": 0.269427,
+      "target_y_m": 0.028765,
+      "target_z_m": 0.278282,
+      "target_wrist_rotate_rad": 0.021494,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 55,
+      "time_s": 1.885060263653484,
+      "detected": true,
+      "target_x_m": 0.27082,
+      "target_y_m": 0.032284,
+      "target_z_m": 0.277482,
+      "target_wrist_rotate_rad": 0.018524,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 56,
+      "time_s": 1.9193340866290018,
+      "detected": true,
+      "target_x_m": 0.271528,
+      "target_y_m": 0.038072,
+      "target_z_m": 0.277183,
+      "target_wrist_rotate_rad": 0.016896,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 57,
+      "time_s": 1.9536079096045198,
+      "detected": true,
+      "target_x_m": 0.268607,
+      "target_y_m": 0.048274,
+      "target_z_m": 0.277355,
+      "target_wrist_rotate_rad": 0.013783,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 58,
+      "time_s": 1.9878817325800378,
+      "detected": true,
+      "target_x_m": 0.263482,
+      "target_y_m": 0.055808,
+      "target_z_m": 0.278961,
+      "target_wrist_rotate_rad": 0.012366,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 59,
+      "time_s": 2.0221555555555555,
+      "detected": true,
+      "target_x_m": 0.255357,
+      "target_y_m": 0.069994,
+      "target_z_m": 0.281205,
+      "target_wrist_rotate_rad": 0.002711,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 60,
+      "time_s": 2.0564293785310737,
+      "detected": true,
+      "target_x_m": 0.246528,
+      "target_y_m": 0.075069,
+      "target_z_m": 0.28508,
+      "target_wrist_rotate_rad": 0.000126,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 61,
+      "time_s": 2.0907032015065914,
+      "detected": true,
+      "target_x_m": 0.239891,
+      "target_y_m": 0.080495,
+      "target_z_m": 0.289268,
+      "target_wrist_rotate_rad": -0.011185,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 62,
+      "time_s": 2.124977024482109,
+      "detected": true,
+      "target_x_m": 0.232753,
+      "target_y_m": 0.080397,
+      "target_z_m": 0.293319,
+      "target_wrist_rotate_rad": -0.022577,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 63,
+      "time_s": 2.1592508474576273,
+      "detected": true,
+      "target_x_m": 0.223681,
+      "target_y_m": 0.078609,
+      "target_z_m": 0.296394,
+      "target_wrist_rotate_rad": -0.037814,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 64,
+      "time_s": 2.193524670433145,
+      "detected": true,
+      "target_x_m": 0.215604,
+      "target_y_m": 0.072008,
+      "target_z_m": 0.298886,
+      "target_wrist_rotate_rad": -0.049639,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 65,
+      "time_s": 2.2277984934086628,
+      "detected": true,
+      "target_x_m": 0.209652,
+      "target_y_m": 0.068513,
+      "target_z_m": 0.299838,
+      "target_wrist_rotate_rad": -0.0674,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 66,
+      "time_s": 2.262072316384181,
+      "detected": true,
+      "target_x_m": 0.204738,
+      "target_y_m": 0.065817,
+      "target_z_m": 0.3,
+      "target_wrist_rotate_rad": -0.085916,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 67,
+      "time_s": 2.2963461393596987,
+      "detected": true,
+      "target_x_m": 0.202083,
+      "target_y_m": 0.061034,
+      "target_z_m": 0.299687,
+      "target_wrist_rotate_rad": -0.106215,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 68,
+      "time_s": 2.3306199623352164,
+      "detected": true,
+      "target_x_m": 0.201151,
+      "target_y_m": 0.055485,
+      "target_z_m": 0.299064,
+      "target_wrist_rotate_rad": -0.126827,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 69,
+      "time_s": 2.3648937853107346,
+      "detected": true,
+      "target_x_m": 0.200407,
+      "target_y_m": 0.047346,
+      "target_z_m": 0.297997,
+      "target_wrist_rotate_rad": -0.148268,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 70,
+      "time_s": 2.3991676082862523,
+      "detected": true,
+      "target_x_m": 0.198638,
+      "target_y_m": 0.03799,
+      "target_z_m": 0.296958,
+      "target_wrist_rotate_rad": -0.167926,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 71,
+      "time_s": 2.43344143126177,
+      "detected": true,
+      "target_x_m": 0.195728,
+      "target_y_m": 0.026812,
+      "target_z_m": 0.295839,
+      "target_wrist_rotate_rad": -0.183492,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 72,
+      "time_s": 2.467715254237288,
+      "detected": true,
+      "target_x_m": 0.192176,
+      "target_y_m": 0.017172,
+      "target_z_m": 0.294821,
+      "target_wrist_rotate_rad": -0.196096,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 73,
+      "time_s": 2.501989077212806,
+      "detected": true,
+      "target_x_m": 0.188955,
+      "target_y_m": 0.009086,
+      "target_z_m": 0.293809,
+      "target_wrist_rotate_rad": -0.203811,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 74,
+      "time_s": 2.536262900188324,
+      "detected": true,
+      "target_x_m": 0.186493,
+      "target_y_m": 0.002788,
+      "target_z_m": 0.292851,
+      "target_wrist_rotate_rad": -0.207807,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 75,
+      "time_s": 2.570536723163842,
+      "detected": true,
+      "target_x_m": 0.184054,
+      "target_y_m": -0.00206,
+      "target_z_m": 0.291952,
+      "target_wrist_rotate_rad": -0.210246,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 76,
+      "time_s": 2.6048105461393596,
+      "detected": true,
+      "target_x_m": 0.182531,
+      "target_y_m": -0.004138,
+      "target_z_m": 0.291054,
+      "target_wrist_rotate_rad": -0.211736,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 77,
+      "time_s": 2.6390843691148778,
+      "detected": true,
+      "target_x_m": 0.18091,
+      "target_y_m": -0.005898,
+      "target_z_m": 0.290501,
+      "target_wrist_rotate_rad": -0.212139,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 78,
+      "time_s": 2.6733581920903955,
+      "detected": true,
+      "target_x_m": 0.18,
+      "target_y_m": -0.005825,
+      "target_z_m": 0.290111,
+      "target_wrist_rotate_rad": -0.212375,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 79,
+      "time_s": 2.7076320150659132,
+      "detected": true,
+      "target_x_m": 0.180434,
+      "target_y_m": -0.003091,
+      "target_z_m": 0.289744,
+      "target_wrist_rotate_rad": -0.211972,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 80,
+      "time_s": 2.7419058380414314,
+      "detected": true,
+      "target_x_m": 0.180322,
+      "target_y_m": -0.003382,
+      "target_z_m": 0.289956,
+      "target_wrist_rotate_rad": -0.205119,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 81,
+      "time_s": 2.776179661016949,
+      "detected": true,
+      "target_x_m": 0.181146,
+      "target_y_m": -0.006058,
+      "target_z_m": 0.290701,
+      "target_wrist_rotate_rad": -0.193687,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 82,
+      "time_s": 2.810453483992467,
+      "detected": true,
+      "target_x_m": 0.184317,
+      "target_y_m": -0.007284,
+      "target_z_m": 0.291599,
+      "target_wrist_rotate_rad": -0.178497,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 83,
+      "time_s": 2.844727306967985,
+      "detected": true,
+      "target_x_m": 0.191054,
+      "target_y_m": -0.010886,
+      "target_z_m": 0.29269,
+      "target_wrist_rotate_rad": -0.156783,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 84,
+      "time_s": 2.8790011299435028,
+      "detected": true,
+      "target_x_m": 0.200269,
+      "target_y_m": -0.013007,
+      "target_z_m": 0.294047,
+      "target_wrist_rotate_rad": -0.130642,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 85,
+      "time_s": 2.9132749529190205,
+      "detected": true,
+      "target_x_m": 0.212491,
+      "target_y_m": -0.010152,
+      "target_z_m": 0.294129,
+      "target_wrist_rotate_rad": -0.107382,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 86,
+      "time_s": 2.9475487758945387,
+      "detected": true,
+      "target_x_m": 0.225179,
+      "target_y_m": -0.004351,
+      "target_z_m": 0.292962,
+      "target_wrist_rotate_rad": -0.084197,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 87,
+      "time_s": 2.9818225988700564,
+      "detected": true,
+      "target_x_m": 0.242154,
+      "target_y_m": -0.002899,
+      "target_z_m": 0.291196,
+      "target_wrist_rotate_rad": -0.062779,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 88,
+      "time_s": 3.0160964218455746,
+      "detected": true,
+      "target_x_m": 0.255712,
+      "target_y_m": 0.003433,
+      "target_z_m": 0.288779,
+      "target_wrist_rotate_rad": -0.049952,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 89,
+      "time_s": 3.0503702448210923,
+      "detected": true,
+      "target_x_m": 0.262988,
+      "target_y_m": 0.005027,
+      "target_z_m": 0.285939,
+      "target_wrist_rotate_rad": -0.042676,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 90,
+      "time_s": 3.08464406779661,
+      "detected": true,
+      "target_x_m": 0.263948,
+      "target_y_m": -0.000872,
+      "target_z_m": 0.28362,
+      "target_wrist_rotate_rad": -0.038064,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 91,
+      "time_s": 3.118917890772128,
+      "detected": true,
+      "target_x_m": 0.266775,
+      "target_y_m": -0.005042,
+      "target_z_m": 0.282358,
+      "target_wrist_rotate_rad": -0.042343,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 92,
+      "time_s": 3.153191713747646,
+      "detected": true,
+      "target_x_m": 0.263993,
+      "target_y_m": -0.011025,
+      "target_z_m": 0.282776,
+      "target_wrist_rotate_rad": -0.047475,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 93,
+      "time_s": 3.1874655367231637,
+      "detected": true,
+      "target_x_m": 0.264618,
+      "target_y_m": -0.018752,
+      "target_z_m": 0.283071,
+      "target_wrist_rotate_rad": -0.052692,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 94,
+      "time_s": 3.221739359698682,
+      "detected": true,
+      "target_x_m": 0.26561,
+      "target_y_m": -0.030442,
+      "target_z_m": 0.284201,
+      "target_wrist_rotate_rad": -0.055188,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 95,
+      "time_s": 3.2560131826741996,
+      "detected": true,
+      "target_x_m": 0.268557,
+      "target_y_m": -0.036995,
+      "target_z_m": 0.285013,
+      "target_wrist_rotate_rad": -0.056454,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 96,
+      "time_s": 3.2902870056497173,
+      "detected": true,
+      "target_x_m": 0.268621,
+      "target_y_m": -0.046234,
+      "target_z_m": 0.285652,
+      "target_wrist_rotate_rad": -0.055036,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 97,
+      "time_s": 3.3245608286252355,
+      "detected": true,
+      "target_x_m": 0.269539,
+      "target_y_m": -0.048164,
+      "target_z_m": 0.285178,
+      "target_wrist_rotate_rad": -0.055427,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 98,
+      "time_s": 3.3588346516007532,
+      "detected": true,
+      "target_x_m": 0.266796,
+      "target_y_m": -0.054948,
+      "target_z_m": 0.285461,
+      "target_wrist_rotate_rad": -0.051859,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 99,
+      "time_s": 3.3931084745762714,
+      "detected": true,
+      "target_x_m": 0.265248,
+      "target_y_m": -0.058033,
+      "target_z_m": 0.28548,
+      "target_wrist_rotate_rad": -0.049099,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 100,
+      "time_s": 3.427382297551789,
+      "detected": true,
+      "target_x_m": 0.265089,
+      "target_y_m": -0.060913,
+      "target_z_m": 0.285778,
+      "target_wrist_rotate_rad": -0.047583,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 101,
+      "time_s": 3.461656120527307,
+      "detected": true,
+      "target_x_m": 0.262707,
+      "target_y_m": -0.064284,
+      "target_z_m": 0.286048,
+      "target_wrist_rotate_rad": -0.043876,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 102,
+      "time_s": 3.495929943502825,
+      "detected": true,
+      "target_x_m": 0.259023,
+      "target_y_m": -0.068047,
+      "target_z_m": 0.286143,
+      "target_wrist_rotate_rad": -0.04026,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 103,
+      "time_s": 3.5302037664783428,
+      "detected": true,
+      "target_x_m": 0.256365,
+      "target_y_m": -0.068607,
+      "target_z_m": 0.285995,
+      "target_wrist_rotate_rad": -0.038207,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 104,
+      "time_s": 3.5644775894538605,
+      "detected": true,
+      "target_x_m": 0.256259,
+      "target_y_m": -0.068449,
+      "target_z_m": 0.285694,
+      "target_wrist_rotate_rad": -0.038136,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 105,
+      "time_s": 3.5987514124293787,
+      "detected": true,
+      "target_x_m": 0.256448,
+      "target_y_m": -0.068315,
+      "target_z_m": 0.285788,
+      "target_wrist_rotate_rad": -0.038495,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 106,
+      "time_s": 3.6330252354048964,
+      "detected": true,
+      "target_x_m": 0.259162,
+      "target_y_m": -0.066512,
+      "target_z_m": 0.285759,
+      "target_wrist_rotate_rad": -0.04005,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 107,
+      "time_s": 3.667299058380414,
+      "detected": true,
+      "target_x_m": 0.26163,
+      "target_y_m": -0.067478,
+      "target_z_m": 0.2858,
+      "target_wrist_rotate_rad": -0.04121,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 108,
+      "time_s": 3.7015728813559323,
+      "detected": true,
+      "target_x_m": 0.261247,
+      "target_y_m": -0.070335,
+      "target_z_m": 0.286225,
+      "target_wrist_rotate_rad": -0.042773,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 109,
+      "time_s": 3.73584670433145,
+      "detected": true,
+      "target_x_m": 0.26112,
+      "target_y_m": -0.072478,
+      "target_z_m": 0.286452,
+      "target_wrist_rotate_rad": -0.045537,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 110,
+      "time_s": 3.770120527306968,
+      "detected": true,
+      "target_x_m": 0.257909,
+      "target_y_m": -0.077874,
+      "target_z_m": 0.286914,
+      "target_wrist_rotate_rad": -0.0453,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 111,
+      "time_s": 3.804394350282486,
+      "detected": true,
+      "target_x_m": 0.254082,
+      "target_y_m": -0.085792,
+      "target_z_m": 0.287285,
+      "target_wrist_rotate_rad": -0.044465,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 112,
+      "time_s": 3.8386681732580037,
+      "detected": true,
+      "target_x_m": 0.250611,
+      "target_y_m": -0.09152,
+      "target_z_m": 0.287468,
+      "target_wrist_rotate_rad": -0.043249,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 113,
+      "time_s": 3.872941996233522,
+      "detected": true,
+      "target_x_m": 0.249527,
+      "target_y_m": -0.094972,
+      "target_z_m": 0.287191,
+      "target_wrist_rotate_rad": -0.043452,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 114,
+      "time_s": 3.9072158192090396,
+      "detected": true,
+      "target_x_m": 0.246497,
+      "target_y_m": -0.099753,
+      "target_z_m": 0.287111,
+      "target_wrist_rotate_rad": -0.042636,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 115,
+      "time_s": 3.9414896421845573,
+      "detected": true,
+      "target_x_m": 0.249081,
+      "target_y_m": -0.099739,
+      "target_z_m": 0.286587,
+      "target_wrist_rotate_rad": -0.044118,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 116,
+      "time_s": 3.9757634651600755,
+      "detected": true,
+      "target_x_m": 0.249654,
+      "target_y_m": -0.099394,
+      "target_z_m": 0.286378,
+      "target_wrist_rotate_rad": -0.044434,
+      "target_gripper": 0.024
+    },
+    {
+      "frame_index": 117,
+      "time_s": 4.010037288135593,
+      "detected": true,
+      "target_x_m": 0.250209,
+      "target_y_m": -0.1,
+      "target_z_m": 0.286137,
+      "target_wrist_rotate_rad": -0.045266,
+      "target_gripper": 0.024
+    }
+  ]
+}
