@@ -1,0 +1,6 @@
+name: hand2robot
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+prefix: /home/taylan/miniforge3/envs/hand2robot
