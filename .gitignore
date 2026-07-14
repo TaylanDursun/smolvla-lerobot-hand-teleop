@@ -1,6 +1,3 @@
-.vscode/browse.vc.db
-.vscode/browse.vc.db-shm
-.vscode/browse.vc.db-wal
 .vscode/
 
 # Python bytecode and caches
@@ -47,13 +44,9 @@ Thumbs.db
 .vscode/*.db
 .vscode/*.db-*
 
-# Local outputs and media artifacts (keep placeholders with .gitkeep)
+# Project artifacts (generated outputs)
 artifacts/
-/report/
-/report/**
-/external/
-*.mp4
-*.avi
-*.mov
-*.mkv
-*.gif
+task1_smolvla_lerobot/outputs/
+task2_hand_to_robot/outputs/
+external/
+report/
