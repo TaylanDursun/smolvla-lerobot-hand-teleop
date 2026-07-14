@@ -115,3 +115,8 @@ After a successful run, these files are generated:
 
 - GPU is not required; the pipeline can run on CPU.
 - If your MuJoCo scene path differs, pass the correct XML path with `--scene`.
+
+## Task 3 Part C Presentation Assets
+
+- Slide deck outline: `report/task3_part_c_presentation.md`
+- Speaker notes and timing plan: `report/task3_part_c_talk_track.md`
