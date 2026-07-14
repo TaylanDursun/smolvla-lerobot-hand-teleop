@@ -1,37 +1,29 @@
 # Task 3 Part C - Talk Track
 
 ## Recommended Duration
-- Total: 8 to 10 minutes
+- Total: 6 to 8 minutes
 - Q and A: 2 to 3 minutes
 
 ## Timing by Slide
 1. Title: 30 sec
-2. Problem Statement: 45 sec
-3. System Overview: 60 sec
-4. Task 1 Setup: 75 sec
-5. Task 1 Results: 75 sec
-6. Task 2 Pipeline: 75 sec
-7. Task 2 Results: 90 sec
-8. Challenges and Fixes: 75 sec
-9. Task 3 Roadmap: 60 sec
-10. Conclusion: 30 sec
+2. Problem and System Overview: 75 sec
+3. Task 1 Setup and Results: 90 sec
+4. Task 2 Pipeline and Results: 105 sec
+5. Challenges and Fixes: 75 sec
+6. Conclusion and Next Steps: 45 sec
 
 ## Key Message per Slide
 - Slide 1: Scope and goal of the presentation
-- Slide 2: Why this problem is relevant in embodied AI
-- Slide 3: End-to-end architecture view
-- Slide 4: Why model and embodiment alignment mattered
-- Slide 5: What worked and what was limited in Task 1
-- Slide 6: How human hand motion was converted into robot motion
-- Slide 7: Qualitative success criteria and final outputs
-- Slide 8: Engineering issues and concrete fixes
-- Slide 9: What Part C communicates and what comes next
-- Slide 10: Final takeaway and confidence statement
+- Slide 2: Why the problem matters and how the overall system is structured
+- Slide 3: Why model and embodiment alignment mattered, and what Task 1 showed
+- Slide 4: How hand motion was converted into robot motion and what Task 2 achieved
+- Slide 5: Engineering issues and concrete fixes
+- Slide 6: Final takeaway and future direction
 
 ## Demo Insert Points
-- After Slide 5:
+- After Slide 3:
   - Show rollout snapshots from report figures
-- After Slide 7:
+- After Slide 4:
   - Show side-by-side video from task2 outputs
 
 ## Q and A Preparation

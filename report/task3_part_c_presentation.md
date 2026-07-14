@@ -11,18 +11,11 @@ Speaker note:
 
 ---
 
-## Slide 2 - Problem Statement
+## Slide 2 - Problem and System Overview
 - Goal: Transfer human intent into robot behavior through learning and perception
 - Task 1 focus: Run and evaluate a pretrained Vision-Language-Action policy
 - Task 2 focus: Map hand motion from video to robot motion in simulation
 - Why it matters: Fast prototyping pipeline for embodied AI workflows
-
-Speaker note:
-- Emphasize that both tasks were approached as end-to-end engineering pipelines, not isolated scripts.
-
----
-
-## Slide 3 - System Overview
 - Input sources:
   - Task 1: LIBERO observations plus robot state
   - Task 2: First-person hand video
@@ -36,51 +29,35 @@ Speaker note:
   - Side-by-side comparison video
 
 Speaker note:
-- Mention reproducibility: environment files and script-based pipeline are available.
+- Emphasize that both tasks were approached as end-to-end engineering pipelines, not isolated scripts.
 
 ---
 
-## Slide 4 - Task 1 Setup and Model Choice
+## Slide 3 - Task 1: Setup and Results
 - Selected checkpoint: lerobot/smolvla_libero
 - Dataset alignment: trained on lerobot/libero
 - Robot embodiment alignment: Panda
 - Evaluation environment: LIBERO (libero_10 suite)
 - Key constraint: 4 GB VRAM caused OOM on GPU, stable evaluation done on CPU
-
-Speaker note:
-- Highlight why embodiment matching was critical for coherent behavior.
-
----
-
-## Slide 5 - Task 1 Results
 - Pipeline successfully executed end-to-end
 - Rollouts generated and recorded
 - Longer horizons showed clearer, task-related behavior
-- Qualitative observation:
-  - Not perfect success in all episodes
-  - Motion is coherent and non-random
+- Qualitative observation: motion is coherent and non-random, but not perfect in every episode
 - Evidence:
   - report/figures/task1_rollout_frame_1.png
   - report/figures/task1_rollout_frame_2.png
 
 Speaker note:
-- Explain that short rollouts can mislead interpretation of policy quality.
+- Highlight why embodiment matching mattered, and explain that short rollouts initially hid the actual behavior quality.
 
 ---
 
-## Slide 6 - Task 2 Pipeline
+## Slide 4 - Task 2: Pipeline and Results
 - Step 1: Hand landmarks from video (MediaPipe Tasks)
 - Step 2: Wrist trajectory and orientation cue extraction
 - Step 3: Relative-motion mapping to VX300s workspace
 - Step 4: Jacobian-based damped IK replay in MuJoCo
 - Step 5: Side-by-side comparison video generation
-
-Speaker note:
-- Stress that relative mapping improved transfer quality versus direct normalization.
-
----
-
-## Slide 7 - Task 2 Results
 - Target behavior: lifting plus pouring-like wrist rotation
 - Improvements achieved:
   - Orientation-aware mapping
@@ -92,11 +69,11 @@ Speaker note:
   - pouring_side_by_side.mp4
 
 Speaker note:
-- Clarify that this is a coherent prototype, not exact kinematic imitation.
+- Stress that relative mapping improved transfer quality versus direct normalization, and clarify that this is coherent prototype-level transfer rather than exact imitation.
 
 ---
 
-## Slide 8 - Technical Challenges and Fixes
+## Slide 5 - Technical Challenges and Fixes
 - Dependency compatibility issues across MuJoCo, LIBERO, and robosuite stack
 - MediaPipe API change handled by migrating to Tasks API
 - GPU memory limitation mitigated by CPU fallback for stable evaluation
@@ -109,27 +86,16 @@ Speaker note:
 
 ---
 
-## Slide 9 - Task 3 Plan and Part C Positioning
+## Slide 6 - Conclusion and Next Steps
 - Part C objective: clear communication of technical work and outcomes
-- Presentation deliverables prepared:
-  - concise technical narrative
-  - evidence-driven visuals
-  - reproducibility and roadmap
+- Task 1 and Task 2 objectives are completed at prototype level
+- End-to-end embodied AI pipeline is operational
+- Results are coherent, reproducible, and presentation-ready
 - Next development priorities:
   - stronger orientation control
   - improved IK constraints
   - quantitative metrics for imitation quality
-
-Speaker note:
-- Present this as a bridge from prototype success to robust system design.
-
----
-
-## Slide 10 - Conclusion
-- Task 1 and Task 2 objectives are completed at prototype level
-- End-to-end embodied AI pipeline is operational
-- Results are coherent, reproducible, and presentation-ready
 - Open to questions
 
 Speaker note:
-- Close with confidence and invite discussion around scaling and evaluation metrics.
+- Present this as a bridge from prototype success to a more robust future system, then close with questions.
