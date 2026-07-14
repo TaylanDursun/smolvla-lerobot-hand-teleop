@@ -1,36 +1,36 @@
 # hand_to_robot
 
-Bu repo, el hareketini robot uç-efektör hedeflerine eşleyip MuJoCo üzerinde tekrar oynatmak için hazırlanmıştır.
+This repository transfers hand motion from video to robot end-effector targets and replays the motion in MuJoCo.
 
-## Proje Yapısı
+## Project Structure
 
-- `task2_hand_to_robot/`: Task 2 pipeline scriptleri
-- `task1_smolvla_lerobot/`: Task 1 çıktıları ve ilgili klasörler
-- `report/`: rapor kaynak dosyaları (LaTeX)
-- `environment.yml`, `environment_full.yml`: ortam tanımları
-- `requirements_lock.txt`: pip paket kilit listesi
+- `task2_hand_to_robot/`: Task 2 pipeline scripts
+- `task1_smolvla_lerobot/`: Task 1 outputs and related files
+- `report/`: LaTeX report sources
+- `environment.yml`, `environment_full.yml`: environment definitions
+- `requirements_lock.txt`: pinned pip package list
 
-## Hızlı Başlangıç
+## Quick Start
 
-Aşağıdaki adımları repo kök dizininde çalıştırın.
+Run all commands from the repository root.
 
-### 1) Repo klonla
+### 1) Clone the repository
 
 ```bash
 git clone <REPO_URL>
 cd hand_to_robot
 ```
 
-### 2) Conda ortamını kur
+### 2) Create and activate the conda environment
 
-Tercih edilen yol:
+Preferred:
 
 ```bash
 conda env create -f environment_full.yml -n hand2robot
 conda activate hand2robot
 ```
 
-Alternatif (gerekirse):
+Alternative:
 
 ```bash
 conda create -n hand2robot python=3.10 -y
@@ -38,9 +38,9 @@ conda activate hand2robot
 pip install -r requirements_lock.txt
 ```
 
-### 3) External bağımlılıkları çek
+### 3) Download external dependencies
 
-`external/` klasörü repoya dahil değilse yalnızca gereken dependency'leri indir:
+If `external/` is not included in your clone, fetch only what is needed:
 
 ```bash
 mkdir -p external
@@ -48,11 +48,11 @@ git clone --depth 1 https://github.com/google-deepmind/mujoco_menagerie.git exte
 git clone --depth 1 https://github.com/Lifelong-Robot-Learning/LIBERO.git external/LIBERO
 ```
 
-## Task 2: Uçtan Uca Çalıştırma
+## Task 2: End-to-End Run
 
-Örnek giriş videosu: `task2_hand_to_robot/pouring.mp4`
+Example input video: `task2_hand_to_robot/pouring.mp4`
 
-### 1) El landmark çıkar
+### 1) Extract hand landmarks
 
 ```bash
 python task2_hand_to_robot/extract_hand_landmarks.py \
@@ -60,7 +60,7 @@ python task2_hand_to_robot/extract_hand_landmarks.py \
   --output-dir task2_hand_to_robot/outputs/pouring_run_01_full
 ```
 
-### 2) Bilek trajesi çıkar
+### 2) Extract wrist trajectory
 
 ```bash
 python task2_hand_to_robot/extract_wrist_trajectory.py \
@@ -68,7 +68,7 @@ python task2_hand_to_robot/extract_wrist_trajectory.py \
   --output-dir task2_hand_to_robot/outputs/pouring_run_01_full_wrist_v2
 ```
 
-### 3) Robot hedeflerine eşle
+### 3) Map trajectory to VX300s targets
 
 ```bash
 python task2_hand_to_robot/map_wrist_to_vx300s_targets.py \
@@ -76,7 +76,7 @@ python task2_hand_to_robot/map_wrist_to_vx300s_targets.py \
   --output-dir task2_hand_to_robot/outputs/pouring_run_01_full_targets_v2
 ```
 
-### 4) MuJoCo replay + video kaydı
+### 4) Replay in MuJoCo and record video
 
 ```bash
 python task2_hand_to_robot/replay_vx300s_targets.py \
@@ -87,7 +87,7 @@ python task2_hand_to_robot/replay_vx300s_targets.py \
   --record-video task2_hand_to_robot/outputs/pouring_run_01_full_targets_v2/vx300s_replay.mp4
 ```
 
-### 5) Referans + replay videoyu yan yana birleştir
+### 5) Combine reference and replay videos side by side
 
 ```bash
 python task2_hand_to_robot/combine_side_by_side.py \
@@ -96,9 +96,9 @@ python task2_hand_to_robot/combine_side_by_side.py \
   --output task2_hand_to_robot/outputs/pouring_run_01_full_targets_v2/pouring_side_by_side.mp4
 ```
 
-## Beklenen Çıktılar
+## Expected Outputs
 
-Başarılı çalıştırmadan sonra aşağıdakiler oluşur:
+After a successful run, these files are generated:
 
 - `task2_hand_to_robot/outputs/pouring_run_01_full/landmarks.json`
 - `task2_hand_to_robot/outputs/pouring_run_01_full_wrist_v2/wrist_trajectory.json`
@@ -106,7 +106,12 @@ Başarılı çalıştırmadan sonra aşağıdakiler oluşur:
 - `task2_hand_to_robot/outputs/pouring_run_01_full_targets_v2/vx300s_replay.mp4`
 - `task2_hand_to_robot/outputs/pouring_run_01_full_targets_v2/pouring_side_by_side.mp4`
 
-## Notlar
+## Versioning Policy
 
-- GPU zorunlu değildir; bu pipeline CPU ile de çalışır.
-- MuJoCo sahne yolu farklıysa `--scene` parametresi ile doğru XML yolunu verin.
+- `report/`: recommended to keep tracked (source of final deliverable).
+- `external/`: recommended to keep ignored (large third-party dependencies, slower clones, noisy diffs).
+
+## Notes
+
+- GPU is not required; the pipeline can run on CPU.
+- If your MuJoCo scene path differs, pass the correct XML path with `--scene`.
