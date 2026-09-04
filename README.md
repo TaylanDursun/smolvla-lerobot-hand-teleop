@@ -23,6 +23,12 @@ cd hand_to_robot
 
 ### 2) Create and activate the conda environment
 
+> **Note (2026-09-04):** the local `hand2robot` environment was deleted to reclaim disk
+> space. `environment_full.yml` and `requirements_lock.txt` were regenerated from that
+> live environment right before deletion, so the steps below rebuild it exactly.
+> Verified working versions: Python 3.10.20, torch 2.6.0+cu124, mujoco 2.3.7,
+> robosuite 1.4.0, lerobot 0.4.4, mediapipe 0.10.35.
+
 Preferred:
 
 ```bash
@@ -38,14 +44,27 @@ conda activate hand2robot
 pip install -r requirements_lock.txt
 ```
 
+Either way, the torch wheels are CUDA 12.4 builds that are not hosted on PyPI.
+`requirements_lock.txt` already carries the required `--extra-index-url`; if you install
+from `environment_full.yml` and pip cannot find `torch==2.6.0+cu124`, add it manually:
+
+```bash
+pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 --extra-index-url https://download.pytorch.org/whl/cu124
+```
+
 ### 3) Download external dependencies
 
-If `external/` is not included in your clone, fetch only what is needed:
+If `external/` is not included in your clone, fetch only what is needed. LIBERO must be
+checked out at the pinned commit and installed as an editable package — this is how the
+original environment had it, and neither `environment_full.yml` nor a plain
+`pip install libero` reproduces it:
 
 ```bash
 mkdir -p external
 git clone --depth 1 https://github.com/google-deepmind/mujoco_menagerie.git external/mujoco_menagerie
-git clone --depth 1 https://github.com/Lifelong-Robot-Learning/LIBERO.git external/LIBERO
+git clone https://github.com/Lifelong-Robot-Learning/LIBERO.git external/LIBERO
+git -C external/LIBERO checkout 8f1084e3132a39270c3a13ebe37270a43ece2a01
+pip install -e external/LIBERO
 ```
 
 ## Task 2: End-to-End Run
